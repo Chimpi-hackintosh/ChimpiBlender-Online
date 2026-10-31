@@ -2,7 +2,7 @@
 
 **Seu mini estúdio 3D no navegador, em português e sem instalação** 💜
 
-O ChimpiBlender Online é um editor 3D leve, desenvolvido em **HTML, CSS e JavaScript puro**. Ele funciona sem bibliotecas externas e também pode ser aberto offline. O modelo inicial é o **GatinhoMamãe**, com uma segunda cena conceitual de suporte para **tag NFC**.
+O ChimpiBlender Online é um editor 3D leve, desenvolvido em **HTML, CSS e JavaScript puro**. Ele funciona sem bibliotecas externas e também pode ser aberto offline
 
 > **Observação:** este é um editor 3D independente, **não é o Blender oficial**. Ele não gera instruções para caneta 3D nem grava tags NFC.
 
@@ -68,10 +68,6 @@ ChimpiBlender-Online/
 ├── LICENSE          # Licença Apache 2.0
 └── .gitignore       # Arquivos ignorados pelo Git
 ```
-
-## 🐱 GatinhoMamãe e caneta 3D
-
-O modelo de suporte NFC é **apenas uma referência de formato**. Meça a tag real antes de projetar o suporte físico. **Não aqueça uma tag NFC com a caneta 3D**, pois o calor pode danificá-la. Construa e deixe a peça esfriar antes de colocar a tag.
 
 ---
 
