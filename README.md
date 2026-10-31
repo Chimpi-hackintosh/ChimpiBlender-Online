@@ -19,7 +19,6 @@ Depois de ativar o GitHub Pages, o site ficará disponível em:
 - Modelos 3D: cubo, esfera, cilindro, cone, rosca e plano
 - Mover, girar, redimensionar, duplicar, excluir e colorir objetos
 - Câmera orbital com zoom, panorâmica e foco
-- Cena do **GatinhoMamãe** e exemplo visual para a base de uma tag NFC
 - Desfazer/refazer e rascunho salvo automaticamente no navegador
 - Exportar a cena como `.obj`, o projeto como `.json` ou uma imagem `.png`
 - Layout adaptável a computador e celular (modelagem mais confortável no PC)
