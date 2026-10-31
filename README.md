@@ -2,9 +2,9 @@
 
 **Seu mini estúdio 3D no navegador, em português e sem instalação** 💜
 
-O ChimpiBlender Online é um editor 3D leve, desenvolvido em **HTML, CSS e JavaScript puro**. Ele funciona sem bibliotecas externas e também pode ser aberto offline
+O ChimpiBlender Online é um editor 3D leve, desenvolvido em **HTML, CSS e JavaScript puro**. Ele funciona sem bibliotecas externas e também pode ser aberto offline para modelos 3d
 
-> **Observação:** este é um editor 3D independente, **não é o Blender oficial**. Ele não gera instruções para caneta 3D nem grava tags NFC.
+
 
 ## 🌐 Acessar o editor
 
