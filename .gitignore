@@ -1,0 +1,12 @@
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Arquivos de desenvolvimento
+node_modules/
+dist/
+build/
+*.log
+*.tmp
