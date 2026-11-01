@@ -75,3 +75,7 @@ Feito para o projeto **Chimpi-hackintosh** 💜
 ## 📜 Licença
 
 Este repositório utiliza a **Apache License 2.0**, conforme o arquivo [LICENSE](LICENSE) já presente no projeto
+
+## Aviso de suporte
+
+Aviso traduzido, data de 04/11/2026, versões e limites de distribuição em [SUPPORT.md](SUPPORT.md)
