@@ -39,6 +39,6 @@ O catálogo público não inclui repositórios privados
 
 Os testes do aviso cobrem versões iguais e mais novas sem alerta, versões antigas com alerta, mudança exata de data, traduções, falha de rede e rejeição de links não oficiais
 
-A revisão interna do site `20261101` identifica esta geração do verificador — não representa uma versão de aplicativo já lançada
+A revisão interna do site `20261102` identifica esta geração do verificador — não representa uma versão de aplicativo já lançada
 
 O catálogo permite comparar revisões do site em futuras implantações sem inventar versões semânticas de Releases

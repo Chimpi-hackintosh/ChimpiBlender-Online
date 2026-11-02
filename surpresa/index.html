@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17142d">
+  <meta name="description" content="Um minijogo secreto com três fases e uma surpresa especial no final">
+  <title>Missão Secreta ✨ | Cartão QR Surpresa</title>
+  <style>
+    :root{color-scheme:dark;--bg:#100e24;--card:#211c41;--card2:#292351;--line:#50457c;--light:#fff7ff;--muted:#d1c9ea;--pink:#ff86c8;--purple:#b6a0ff;--green:#8ef0c1;--yellow:#ffda84}
+    *{box-sizing:border-box}html,body{min-height:100%;margin:0}body{font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--light);background:radial-gradient(circle at 15% 12%,#51438a 0,transparent 33%),radial-gradient(circle at 95% 85%,#633257 0,transparent 35%),var(--bg);padding:clamp(16px,5vw,36px)}
+    body:before{content:"✦  ⋆  ✧     ⋆  ✦  ⋆    ✧  ✦";position:fixed;inset:0;pointer-events:none;color:#f2d0ff44;font-size:24px;letter-spacing:28px;overflow:hidden}
+    .wrap{max-width:580px;margin:0 auto;position:relative}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0 22px}.logo{font-weight:900;letter-spacing:.1em;font-size:13px;color:var(--purple)}.tag{border:1px solid #ffffff38;background:#ffffff0b;border-radius:99px;padding:7px 11px;font-size:12px;color:var(--muted)}
+    .card{background:linear-gradient(155deg,#2c2553,#19172e);border:1px solid #ffffff27;box-shadow:0 25px 75px #08051f88;border-radius:28px;padding:clamp(20px,5vw,35px);text-align:center;overflow:hidden}
+    h1{font-size:clamp(31px,7vw,42px);line-height:1.12;letter-spacing:-.045em;margin:12px 0}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.2em;font-weight:800;color:var(--green)}.subtitle{color:var(--muted);margin:10px auto 22px;max-width:370px}.mascot{font-size:72px;line-height:1.25;filter:drop-shadow(0 8px 20px #ed70af55);display:inline-block}.emoji{font-size:24px}
+    .btn{border:0;border-radius:16px;color:#25183f;background:linear-gradient(110deg,#ffe5a7,#ff8fca);padding:15px 22px;font-weight:900;font-size:16px;cursor:pointer;box-shadow:0 8px 0 #7f4574;min-height:52px;touch-action:manipulation;transition:transform .12s,box-shadow .12s}.btn:active{transform:translateY(4px);box-shadow:0 4px 0 #7f4574}.btn:focus-visible,.tile:focus-visible,.btn-secondary:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}.btn-secondary{border:1px solid #bba4ef67;color:var(--light);border-radius:14px;background:#ffffff12;padding:12px 18px;font-weight:700;cursor:pointer}.hidden{display:none!important}
+    .steps{display:flex;gap:8px;justify-content:center;margin:4px 0 20px}.step{width:34px;height:8px;border-radius:99px;background:#ffffff24}.step.done{background:var(--green)}.step.active{background:var(--pink)}.hud{display:flex;align-items:center;justify-content:space-between;gap:8px;background:#100e2677;padding:11px 13px;border:1px solid #ffffff1b;border-radius:15px;margin:0 0 17px;text-align:left}.hud strong{font-size:14px}.hud small{display:block;color:var(--muted);font-size:11px}
+    .board{display:grid;gap:9px;max-width:405px;margin:0 auto 17px;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr))}.tile{position:relative;aspect-ratio:1;min-height:0;border-radius:16px;background:linear-gradient(145deg,#625395,#40366f);border:1px solid #ffffff4c;color:#eee3ff;font-size:clamp(23px,5vw,34px);font-weight:900;cursor:pointer;display:grid;place-items:center;box-shadow:inset 0 -5px #0002;transition:background .15s,transform .12s;touch-action:manipulation}.tile:not(:disabled):active{transform:scale(.95)}.tile:not(:disabled):hover{background:#7963aa}.tile:disabled{cursor:default;opacity:1}.tile.miss{background:#292546;color:#d0bce8}.tile.hot{background:#63516e;color:#ffe6b8}.tile.found{background:#2d866d;color:white;animation:pop .35s ease-out}.tile.clue{outline:3px solid var(--yellow);box-shadow:0 0 20px #ffda8499;animation:pulse 1.2s infinite alternate}.tile:disabled:not(.found){box-shadow:none}
+    .hint{min-height:48px;font-size:14px;font-weight:700;color:var(--yellow);margin:0 auto 10px;max-width:400px}.tiny{font-size:12px;color:var(--muted)}.surprise{font-size:20px;font-weight:850;color:#ffdfaf;background:#ffffff12;padding:18px;border:1px dashed #ffe5af83;border-radius:18px;margin:18px 0;overflow-wrap:anywhere}.ribbon{font-size:16px;font-weight:900;color:var(--green);letter-spacing:.08em}.sparkle{animation:pop .7s ease-out}.footer{font-size:12px;color:#d4cce8a8;text-align:center;margin:15px auto}.safe{color:var(--muted)}
+    @keyframes pulse{from{box-shadow:0 0 4px #ffda8499}to{box-shadow:0 0 28px #ffda84ee}}
+    @keyframes pop{0%{transform:scale(.65);opacity:0}65%{transform:scale(1.14);opacity:1}100%{transform:scale(1)}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+    @media(max-width:390px){.card{padding:18px 14px}.board{gap:6px}.tile{border-radius:11px}.hud{font-size:12px}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <header class="top"><div class="logo">✦ CARTÃO SURPRESA</div><span class="tag">🎮 Edição secreta</span></header>
+  <section class="card" aria-live="polite">
+    <div id="welcome">
+      <div class="mascot" aria-hidden="true">🐱</div>
+      <div class="kicker">Surpresa desbloqueada</div>
+      <h1>Missão<br>Secreta ✨</h1>
+      <p class="subtitle">Você encontrou um jogo escondido dentro de um cartão! Descubra os <strong>3 tesouros</strong> para revelar a surpresa final</p>
+      <button type="button" class="btn" id="start">Começar a aventura 🚀</button>
+      <p class="tiny">Sem cadastro · Sem anúncios · Funciona no celular</p>
+    </div>
+    <div id="game" class="hidden">
+      <div class="kicker" id="stageName">FASE 1 DE 3</div>
+      <h1 id="stageTitle">O começo ✨</h1>
+      <p class="subtitle" id="stageIntro">Toque em uma caixinha para procurar o tesouro secreto</p>
+      <div class="steps" id="steps" aria-label="Progresso das fases"></div>
+      <div class="hud"><div><small>🎯 Objetivo</small><strong>Encontrar o tesouro</strong></div><div><small>🔍 Tentativas restantes</small><strong id="left">4</strong></div></div>
+      <div class="board" id="board" role="group" aria-label="Caixinhas do tesouro"></div>
+      <p id="hint" class="hint" role="status">Escolha uma caixinha misteriosa 👀</p>
+      <button type="button" class="btn hidden" id="next">Próxima fase →</button>
+      <button type="button" class="btn-secondary hidden" id="again">Tentar a fase novamente ↻</button>
+    </div>
+    <div id="finish" class="hidden">
+      <div class="mascot sparkle" aria-hidden="true">🎁</div>
+      <div class="ribbon">MISSÃO COMPLETA!</div>
+      <h1>Você conseguiu! 🎉</h1>
+      <p class="subtitle">Os três tesouros foram encontrados. E agora, o segredo do cartão finalmente apareceu...</p>
+      <div id="message" class="surprise"></div>
+      <p class="tiny">💜 Essa surpresa foi feita especialmente pra alegrar o seu dia</p>
+      <button type="button" class="btn" id="restart">Jogar de novo 🔄</button>
+    </div>
+  </section>
+  <p class="footer">Feito com criatividade, papel e um toque de magia 💜</p>
+</main>
+<script>
+'use strict';
+(() => {
+  const $ = id => document.getElementById(id);
+  const stages = [
+    {title:'O começo ✨',intro:'Um tesouro está escondido entre 9 caixinhas!',size:3,tries:5},
+    {title:'Ficou interessante 👀',intro:'Agora são 16 caixinhas. As pistas vão te ajudar!',size:4,tries:7},
+    {title:'O grande segredo 🎁',intro:'Encontre o último tesouro e libere sua surpresa!',size:4,tries:6}
+  ];
+  let stage=0,secret=0,tries=0,finished=false,seen=new Set();
+  const screens=['welcome','game','finish'];
+  const show=id=>screens.forEach(name=>$(name).classList.toggle('hidden',name!==id));
+  function startStage(){
+    show('game');finished=false;seen=new Set();
+    const s=stages[stage];secret=Math.floor(Math.random()*(s.size*s.size));tries=s.tries;
+    $('stageName').textContent=`FASE ${stage+1} DE 3`;
+    $('stageTitle').textContent=s.title;$('stageIntro').textContent=s.intro;
+    $('left').textContent=tries;
+    $('hint').textContent='Toque em uma caixinha misteriosa 👀';
+    $('again').classList.add('hidden');$('next').classList.add('hidden');
+    $('next').textContent=stage===2?'Abrir minha surpresa 🎁':'Próxima fase →';
+    $('steps').replaceChildren();
+    stages.forEach((_,n)=>{const dot=document.createElement('span');dot.className='step '+(n<stage?'done':n===stage?'active':'');dot.setAttribute('aria-label',`Fase ${n+1}`);$('steps').append(dot)});
+    $('board').replaceChildren();$('board').style.setProperty('--cols',s.size);
+    for(let i=0;i<s.size*s.size;i++){
+      const b=document.createElement('button');b.type='button';b.className='tile';b.textContent='?';b.setAttribute('aria-label',`Caixinha ${i+1}`);
+      b.addEventListener('click',()=>guess(i,b));$('board').append(b);
+    }
+  }
+  function guess(i,b){
+    if(finished||seen.has(i))return;
+    seen.add(i);b.disabled=true;
+    if(i===secret){
+      finished=true;b.textContent='💎';b.classList.add('found');$('hint').textContent='TESOURO ENCONTRADO! 💎🎉';
+      [...$('board').children].forEach(x=>x.disabled=true);
+      $('next').classList.remove('hidden');$('next').focus();return;
+    }
+    tries--;$('left').textContent=tries;
+    const n=stages[stage].size;
+    const distance=Math.abs(Math.floor(i/n)-Math.floor(secret/n))+Math.abs((i%n)-(secret%n));
+    const hot=distance<=2;
+    b.textContent=hot?'🔥':'❄️';b.classList.add(hot?'hot':'miss');
+    $('hint').textContent=hot?'Tá QUENTE! O tesouro está perto 🔥':'Tá FRIO! Procure mais longe ❄️';
+    if(tries===1){const help=$('board').children[secret];help.classList.add('clue');$('hint').textContent='DICA DE OURO: a caixinha certa está brilhando! ✨'}
+    if(tries===0){
+      finished=true;$('hint').textContent='As tentativas acabaram! O tesouro mudou de lugar ✨';
+      [...$('board').children].forEach(x=>x.disabled=true);
+      $('again').classList.remove('hidden');$('again').focus();
+    }
+  }
+  function finish(){
+    show('finish');
+    const msg=new URLSearchParams(location.search).get('mensagem');
+    const defaultMsg='✨ Surpresa! Você desbloqueou um dia cheio de alegria, coragem e coisas boas! 🐱💜';
+    $('message').textContent=msg&&msg.trim()?msg.trim().slice(0,240):defaultMsg;
+  }
+  $('start').addEventListener('click',()=>{stage=0;startStage()});
+  $('next').addEventListener('click',()=>{if(!finished)return;if(stage===2)finish();else{stage++;startStage()}});
+  $('again').addEventListener('click',startStage);
+  $('restart').addEventListener('click',()=>{stage=0;startStage()});
+})();
+</script>
+</body>
+</html>
