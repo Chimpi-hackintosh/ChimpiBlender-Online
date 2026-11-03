@@ -12,6 +12,11 @@
       "preview": false,
       "edition": null,
       "url": "https://github.com/Chimpi-hackintosh/OpenCore-Helper/releases/tag/v3.0.2",
+      "windows_setup": {
+        "tag": "v3.0.2",
+        "min_build": 22000,
+        "digest": "sha256:a010669abb6cce810dab00434c0fd220913241fde3f3f8dd5e2a248972367022"
+      },
       "status": "published"
     },
     "SnoopyOS-Lite": {

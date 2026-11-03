@@ -14,6 +14,10 @@ O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já
 
 ## Comportamento
 
+O campo opcional `windows_setup` registra o instalador do OpenCore Helper disponível no GitHub Releases. Ele vincula a tag ao SHA-256 do arquivo publicado e ao piso do fluxo assistido, Windows 11 x64 nativo (build 22000). Esse piso vale para a atualização assistida e não é uma declaração de compatibilidade de todos os pacotes
+
+Ao revisar um novo lançamento, mantenha os metadados de instalação assistida vinculados ao instalador estável realmente publicado. Sem um instalador correspondente e requisitos verificados, o app mantém o aviso informativo
+
 - Detecta o idioma do sistema ou navegador — português, inglês, espanhol, francês, alemão, italiano, russo, chinês, japonês, coreano, árabe e hindi, com inglês como alternativa
 - Compara versões numericamente e ignora sufixos de build quando o aplicativo só informa a série de versão
 - Consulta somente dados públicos de suporte por HTTPS, com prazo limitado e catálogo local quando está sem internet
