@@ -8,9 +8,11 @@ Antes dessa data o aviso informa que o suporte está prestes a terminar — depo
 
 O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já foi infectado
 
-| Aplicativo | Versão publicada conferida em 02/11/2026 | Mínima |
+| Aplicativo | Versão publicada conferida em 04/11/2026 | Mínima |
 | --- | --- | --- |
 | ChimpiBlender Online | Site sem versão de Release | Ainda sem mínimo de versão publicado |
+| Chimpi Find My Kids | v1.1.0-preview.1 | 1.1.0-preview.1 |
+| Chimpi Parents Find My Kids | v1.1.0-preview.1 | 1.1.0-preview.1 |
 
 ## Comportamento
 
@@ -35,7 +37,7 @@ Este PR entrega código e verificações — não equivale a um novo Release, at
 
 As prévias continuam identificadas como prévias — os números da tabela vêm de lançamentos existentes e não foram inventados para esta alteração
 
-O catálogo público não inclui repositórios privados
+O catálogo público inclui 15 entradas públicas verificadas em 04/11/2026 e não inclui repositórios privados
 
 ## Validação local desta alteração
 

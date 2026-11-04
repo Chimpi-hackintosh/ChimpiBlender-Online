@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "verified_at": "2026-11-02",
+  "verified_at": "2026-11-04",
   "ends_at": "2026-11-04T00:00:00Z",
   "table": "https://chimpi-hackintosh.github.io/ChimpiBlender-Online/support.html",
   "apps": {
@@ -138,6 +138,26 @@
       "preview": true,
       "edition": null,
       "url": "https://github.com/Chimpi-hackintosh/ChimpiNFC/releases/tag/v0.1.0-build-2",
+      "status": "preview"
+    },
+    "Chimpi-Find-My-Kids": {
+      "name": "Chimpi Find My Kids",
+      "repo": "Chimpi-Find-My-Kids",
+      "minimum": "1.1.0-preview.1",
+      "tag": "v1.1.0-preview.1",
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/Chimpi-Find-My-Kids/releases/tag/v1.1.0-preview.1",
+      "status": "preview"
+    },
+    "Chimpi-Parents-Find-My-Kids": {
+      "name": "Chimpi Parents Find My Kids",
+      "repo": "Chimpi-Parents-Find-My-Kids",
+      "minimum": "1.1.0-preview.1",
+      "tag": "v1.1.0-preview.1",
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/Chimpi-Parents-Find-My-Kids/releases/tag/v1.1.0-preview.1",
       "status": "preview"
     }
   }

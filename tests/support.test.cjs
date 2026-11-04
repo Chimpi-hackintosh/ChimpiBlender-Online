@@ -32,6 +32,9 @@ test('policy refuses untrusted downloads, downgrades, invalid data and unknown p
   assert.deepEqual(s.checkedPolicy(candidate), s.POLICY);
   assert.deepEqual(s.checkedPolicy(null), s.POLICY);
   assert.equal(s.POLICY.apps['private-placeholder'], undefined);
+  assert.equal(s.notice('Chimpi-Find-My-Kids', '1.1.0-preview.1'), null);
+  assert.ok(s.notice('Chimpi-Find-My-Kids', '1.0.0-preview.1'));
+  assert.equal(s.POLICY.apps['Chimpi-Find-My-Kids'].tag, 'v1.1.0-preview.1');
 });
 test('unavailable network falls back without blocking app startup', async () => {
   const fetch = global.fetch; global.fetch = async () => { throw new Error('offline'); };
