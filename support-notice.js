@@ -24,9 +24,9 @@
   };
   const compare = (left, right) => {
     for (let i = 0; i < 3; i++) if (left.core[i] !== right.core[i]) return left.core[i] < right.core[i] ? -1 : 1;
-    if (!left.pre && !right.pre) return 0;
+    // Existing policies with a stable numeric floor intentionally ignore app-specific build suffixes
+    if (!right.pre) return 0;
     if (!left.pre) return 1;
-    if (!right.pre) return -1;
     for (let i = 0; i < Math.min(left.pre.length, right.pre.length); i++) {
       if (left.pre[i] === right.pre[i]) continue;
       const a = numericIdentifier(left.pre[i]), b = numericIdentifier(right.pre[i]);
