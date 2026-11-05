@@ -11,8 +11,8 @@ O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já
 | Aplicativo | Versão publicada conferida em 04/11/2026 | Mínima |
 | --- | --- | --- |
 | ChimpiBlender Online | Site sem versão de Release | Ainda sem mínimo de versão publicado |
-| Chimpi Find My Kids | v1.1.0-preview.1 | 1.1.0-preview.1 |
-| Chimpi Parents Find My Kids | v1.1.0-preview.1 | 1.1.0-preview.1 |
+| Chimpi Find My Kids | v1.3.1-preview.1 | 1.3.1-preview.1 |
+| Chimpi Parents Find My Kids | v1.3.1-preview.1 | 1.3.1-preview.1 |
 
 ## Comportamento
 
@@ -21,7 +21,7 @@ O campo opcional `windows_setup` registra o instalador do OpenCore Helper dispon
 Ao revisar um novo lançamento, mantenha os metadados de instalação assistida vinculados ao instalador estável realmente publicado. Sem um instalador correspondente e requisitos verificados, o app mantém o aviso informativo
 
 - Detecta o idioma do sistema ou navegador — português, inglês, espanhol, francês, alemão, italiano, russo, chinês, japonês, coreano, árabe e hindi, com inglês como alternativa
-- Compara versões numericamente e ignora sufixos de build quando o aplicativo só informa a série de versão
+- Compara versões numericamente e, quando a mínima inclui uma prévia, também compara seus identificadores — `preview.0` fica abaixo de `preview.1` e uma versão estável equivalente fica acima da prévia
 - Consulta somente dados públicos de suporte por HTTPS, com prazo limitado e catálogo local quando está sem internet
 - Não envia arquivos, prompts, senhas, dados de hardware ou dados NFC
 - Mostra a versão instalada e a mínima, com opções de atualizar, ver a tabela ou deixar para depois
@@ -48,3 +48,10 @@ Os testes do aviso cobrem versões iguais e mais novas sem alerta, versões anti
 A revisão interna do site `20261102` identifica esta geração do verificador — não representa uma versão de aplicativo já lançada
 
 O catálogo permite comparar revisões do site em futuras implantações sem inventar versões semânticas de Releases
+
+
+## Atualização das prévias 1.3.1
+
+As Releases públicas `v1.3.1-preview.1` dos dois apps Find My Kids foram conferidas em 04/11/2026, incluindo os nomes dos APKs e os digests SHA-256 informados pelo GitHub
+
+A mínima foi elevada somente depois da publicação dessas Releases e permanece marcada como prévia
