@@ -8,9 +8,11 @@ Antes dessa data o aviso informa que o suporte está prestes a terminar — depo
 
 O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já foi infectado
 
-| Aplicativo | Versão publicada conferida em 04/11/2026 | Mínima |
+| Aplicativo | Versão ou publicação pública conferida em 06/11/2026 | Mínima |
 | --- | --- | --- |
 | ChimpiBlender Online | Site sem versão de Release | Ainda sem mínimo de versão publicado |
+| Earth-Blender | Sem Release publicada | Ainda sem mínimo de versão publicado |
+| ChimpiBypass | Sem Release publicada, apesar do artefato temporário do workflow | Ainda sem mínimo de versão publicado |
 | Chimpi Find My Kids | v1.3.1-preview.1 | 1.3.1-preview.1 |
 | Chimpi Parents Find My Kids | v1.3.1-preview.1 | 1.3.1-preview.1 |
 
@@ -37,7 +39,7 @@ Este PR entrega código e verificações — não equivale a um novo Release, at
 
 As prévias continuam identificadas como prévias — os números da tabela vêm de lançamentos existentes e não foram inventados para esta alteração
 
-O catálogo público inclui 15 entradas públicas verificadas em 04/11/2026 e não inclui repositórios privados
+O catálogo público inclui 17 entradas públicas verificadas em 06/11/2026 e não inclui repositórios privados
 
 ## Validação local desta alteração
 
@@ -55,3 +57,9 @@ O catálogo permite comparar revisões do site em futuras implantações sem inv
 As Releases públicas `v1.3.1-preview.1` dos dois apps Find My Kids foram conferidas em 04/11/2026, incluindo os nomes dos APKs e os digests SHA-256 informados pelo GitHub
 
 A mínima foi elevada somente depois da publicação dessas Releases e permanece marcada como prévia
+
+## Projetos públicos adicionados em 06/11/2026
+
+Earth-Blender e ChimpiBypass foram incluídos como projetos sem Release para download, sem versão mínima inventada
+
+O workflow do ChimpiBypass gerou um artefato temporário com sucesso, mas isso não equivale a uma Release publicada nem comprova instalação ou funcionamento no computador do usuário

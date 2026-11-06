@@ -9,6 +9,8 @@ const s = context.module.exports;
 test('only a known older installed version gets a notice', () => {
   for (const v of ['3.0.2', '4.0.0', '3.0.2-build-3', 'bad', null]) assert.equal(s.notice('OpenCore-Helper', v), null);
   assert.equal(s.notice('ChimpiConstrucoes', '1.0.0'), null);
+  assert.equal(s.notice('Earth-Blender', '1.0.0'), null);
+  assert.equal(s.notice('ChimpiBypass', '1.0.0'), null);
   assert.equal(s.notice('private', '1.0.0'), null);
   assert.ok(s.notice('OpenCore-Helper', '3.0.0'));
   assert.equal(s.compare(s.version('1.10.0'), s.version('1.9.0')), 1);
@@ -34,6 +36,8 @@ test('policy refuses untrusted downloads, downgrades, invalid data and unknown p
   assert.deepEqual(s.checkedPolicy(candidate), s.POLICY);
   assert.deepEqual(s.checkedPolicy(null), s.POLICY);
   assert.equal(s.POLICY.apps['private-placeholder'], undefined);
+  assert.equal(s.POLICY.apps['Earth-Blender'].status, 'source');
+  assert.equal(s.POLICY.apps['ChimpiBypass'].status, 'source');
   assert.equal(s.notice('Chimpi-Find-My-Kids', '1.3.1-preview.1'), null);
   assert.ok(s.notice('Chimpi-Find-My-Kids', '1.3.1-preview.0'));
   assert.ok(s.notice('Chimpi-Find-My-Kids', '1.2.0-preview.1'));

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "verified_at": "2026-11-04",
+  "verified_at": "2026-11-06",
   "ends_at": "2026-11-04T00:00:00Z",
   "table": "https://chimpi-hackintosh.github.io/ChimpiBlender-Online/support.html",
   "apps": {
@@ -161,6 +161,26 @@
       "url": "https://github.com/Chimpi-hackintosh/Chimpi-Parents-Find-My-Kids/releases/tag/v1.3.1-preview.1",
       "status": "preview",
       "artifact_digest": "sha256:df2bf039ef8b1bfae0690ebac83d4fdd40a3f0acd980f183dbe6130d8f67950b"
+    },
+    "Earth-Blender": {
+      "name": "Earth-Blender",
+      "repo": "Earth-Blender",
+      "minimum": null,
+      "tag": null,
+      "preview": false,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/Earth-Blender",
+      "status": "source"
+    },
+    "ChimpiBypass": {
+      "name": "ChimpiBypass",
+      "repo": "ChimpiBypass",
+      "minimum": null,
+      "tag": null,
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiBypass",
+      "status": "source"
     }
   }
 }
