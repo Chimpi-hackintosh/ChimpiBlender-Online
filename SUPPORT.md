@@ -12,6 +12,8 @@ O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já
 | --- | --- | --- |
 | ChimpiBlender Online | Site sem versão de Release | Ainda sem mínimo de versão publicado |
 | ChimpiKids | v1.0.0-demo.1 — demonstração offline | 1.0.0-demo.1 |
+| ChimpiAI | v1.1.0 — estável | 1.1.0 |
+| ChimpiNature | v1.0.0 — prévia | 1.0.0 |
 | Earth-Blender | Sem Release publicada | Ainda sem mínimo de versão publicado |
 | ChimpiBypass | Sem Release publicada, apesar do artefato temporário do workflow | Ainda sem mínimo de versão publicado |
 | Chimpi Find My Kids | v1.3.1-preview.1 | 1.3.1-preview.1 |
@@ -40,7 +42,7 @@ Este PR entrega código e verificações — não equivale a um novo Release, at
 
 As prévias continuam identificadas como prévias — os números da tabela vêm de lançamentos existentes e não foram inventados para esta alteração
 
-O catálogo público inclui 18 entradas públicas verificadas em 07/11/2026 e não inclui repositórios privados
+O catálogo público inclui 19 entradas públicas verificadas em 07/11/2026 e não inclui repositórios privados
 
 ## Validação local desta alteração
 
@@ -72,3 +74,9 @@ A Release pública `v1.0.0-demo.1` foi conferida em 07/11/2026, com APK, código
 A entrada permanece marcada como prévia de demonstração offline, sem verificação de idade ou controles de responsáveis conectados — não foi testada em celular real
 
 O build real e o digest do APK foram verificados antes de registrar a mínima, sem incluir dados de projetos privados
+
+## Releases públicas conferidas em 07/11/2026
+
+A Release estável `v1.1.0` do ChimpiAI foi conferida com o instalador Windows publicado e seu digest SHA-256 informado pelo GitHub — a disponibilidade no catálogo WinGet continua dependendo da aprovação externa descrita pelo projeto
+
+A Release `v1.0.0` do ChimpiNature foi conferida como prévia, com JAR do mod Fabric e shaderpack opcional publicados — o projeto informa que ainda precisa de validação dentro do Minecraft real

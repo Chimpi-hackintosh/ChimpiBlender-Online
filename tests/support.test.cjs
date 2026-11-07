@@ -10,6 +10,10 @@ test('only a known older installed version gets a notice', () => {
   for (const v of ['3.0.2', '4.0.0', '3.0.2-build-3', 'bad', null]) assert.equal(s.notice('OpenCore-Helper', v), null);
   assert.equal(s.notice('ChimpiConstrucoes', '1.0.0'), null);
   assert.equal(s.notice('ChimpiKids', '1.0.0-demo.1'), null);
+  assert.equal(s.notice('ChimpiAI', '1.1.0'), null);
+  assert.ok(s.notice('ChimpiAI', '1.0.0'));
+  assert.equal(s.notice('ChimpiNature', '1.0.0'), null);
+  assert.ok(s.notice('ChimpiNature', '0.9.0'));
   assert.ok(s.notice('ChimpiKids', '1.0.0-demo.0'));
   assert.ok(s.notice('ChimpiKids', '0.9.0'));
   assert.equal(s.notice('Earth-Blender', '1.0.0'), null);
@@ -41,6 +45,10 @@ test('policy refuses untrusted downloads, downgrades, invalid data and unknown p
   assert.equal(s.POLICY.apps['private-placeholder'], undefined);
   assert.equal(s.POLICY.apps['Earth-Blender'].status, 'source');
   assert.equal(s.POLICY.apps['ChimpiBypass'].status, 'source');
+  assert.equal(s.POLICY.apps['ChimpiAI'].tag, 'v1.1.0');
+  assert.equal(s.POLICY.apps['ChimpiAI'].status, 'published');
+  assert.equal(s.POLICY.apps['ChimpiNature'].tag, 'v1.0.0');
+  assert.equal(s.POLICY.apps['ChimpiNature'].status, 'preview');
   assert.equal(s.notice('Chimpi-Find-My-Kids', '1.3.1-preview.1'), null);
   assert.ok(s.notice('Chimpi-Find-My-Kids', '1.3.1-preview.0'));
   assert.ok(s.notice('Chimpi-Find-My-Kids', '1.2.0-preview.1'));

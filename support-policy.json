@@ -42,12 +42,13 @@
     "ChimpiAI": {
       "name": "ChimpiAI",
       "repo": "ChimpiAI",
-      "minimum": "1.0.0",
-      "tag": "ChimpiAI-1.0.0-beta",
-      "preview": true,
+      "minimum": "1.1.0",
+      "tag": "v1.1.0",
+      "preview": false,
       "edition": null,
-      "url": "https://github.com/Chimpi-hackintosh/ChimpiAI/releases/tag/ChimpiAI-1.0.0-beta",
-      "status": "preview"
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiAI/releases/tag/v1.1.0",
+      "status": "published",
+      "artifact_digest": "sha256:27d098505ce518b01793ad7c3435a3557363bf26359248c03efa336274e7da46"
     },
     "WinSIMU": {
       "name": "WinSIMU",
@@ -192,6 +193,17 @@
       "url": "https://github.com/Chimpi-hackintosh/ChimpiKids/releases/tag/v1.0.0-demo.1",
       "status": "preview",
       "artifact_digest": "sha256:e156571e4d32c24c28d1ea553526d195fe1fa936bc7e7d2922df2ab91d86b85b"
+    },
+    "ChimpiNature": {
+      "name": "ChimpiNature",
+      "repo": "ChimpiNature",
+      "minimum": "1.0.0",
+      "tag": "v1.0.0",
+      "preview": true,
+      "edition": null,
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiNature/releases/tag/v1.0.0",
+      "status": "preview",
+      "artifact_digest": "sha256:198ae5df5393161b7ac91670fb354fc0fdfc7d5f4e4858bd62552cfef6b4f0ff"
     }
   }
 }
