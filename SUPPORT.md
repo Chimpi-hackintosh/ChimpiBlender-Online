@@ -8,9 +8,10 @@ Antes dessa data o aviso informa que o suporte está prestes a terminar — depo
 
 O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já foi infectado
 
-| Aplicativo | Versão ou publicação pública conferida em 06/11/2026 | Mínima |
+| Aplicativo | Versão ou publicação pública conferida em 07/11/2026 | Mínima |
 | --- | --- | --- |
 | ChimpiBlender Online | Site sem versão de Release | Ainda sem mínimo de versão publicado |
+| ChimpiKids | v1.0.0-demo.1 — demonstração offline | 1.0.0-demo.1 |
 | Earth-Blender | Sem Release publicada | Ainda sem mínimo de versão publicado |
 | ChimpiBypass | Sem Release publicada, apesar do artefato temporário do workflow | Ainda sem mínimo de versão publicado |
 | Chimpi Find My Kids | v1.3.1-preview.1 | 1.3.1-preview.1 |
@@ -39,7 +40,7 @@ Este PR entrega código e verificações — não equivale a um novo Release, at
 
 As prévias continuam identificadas como prévias — os números da tabela vêm de lançamentos existentes e não foram inventados para esta alteração
 
-O catálogo público inclui 17 entradas públicas verificadas em 06/11/2026 e não inclui repositórios privados
+O catálogo público inclui 18 entradas públicas verificadas em 07/11/2026 e não inclui repositórios privados
 
 ## Validação local desta alteração
 
@@ -63,3 +64,11 @@ A mínima foi elevada somente depois da publicação dessas Releases e permanece
 Earth-Blender e ChimpiBypass foram incluídos como projetos sem Release para download, sem versão mínima inventada
 
 O workflow do ChimpiBypass gerou um artefato temporário com sucesso, mas isso não equivale a uma Release publicada nem comprova instalação ou funcionamento no computador do usuário
+
+## ChimpiKids — primeira prévia publicada
+
+A Release pública `v1.0.0-demo.1` foi conferida em 07/11/2026, com APK, código-fonte, metadados, assinatura debug e SHA-256 publicados
+
+A entrada permanece marcada como prévia de demonstração offline, sem verificação de idade ou controles de responsáveis conectados — não foi testada em celular real
+
+O build real e o digest do APK foram verificados antes de registrar a mínima, sem incluir dados de projetos privados

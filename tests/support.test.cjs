@@ -9,6 +9,9 @@ const s = context.module.exports;
 test('only a known older installed version gets a notice', () => {
   for (const v of ['3.0.2', '4.0.0', '3.0.2-build-3', 'bad', null]) assert.equal(s.notice('OpenCore-Helper', v), null);
   assert.equal(s.notice('ChimpiConstrucoes', '1.0.0'), null);
+  assert.equal(s.notice('ChimpiKids', '1.0.0-demo.1'), null);
+  assert.ok(s.notice('ChimpiKids', '1.0.0-demo.0'));
+  assert.ok(s.notice('ChimpiKids', '0.9.0'));
   assert.equal(s.notice('Earth-Blender', '1.0.0'), null);
   assert.equal(s.notice('ChimpiBypass', '1.0.0'), null);
   assert.equal(s.notice('private', '1.0.0'), null);
