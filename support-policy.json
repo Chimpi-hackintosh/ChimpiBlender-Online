@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "verified_at": "2026-11-07",
+  "verified_at": "2026-11-08",
   "ends_at": "2026-11-04T00:00:00Z",
   "table": "https://chimpi-hackintosh.github.io/ChimpiBlender-Online/support.html",
   "apps": {
@@ -182,17 +182,6 @@
       "edition": null,
       "url": "https://github.com/Chimpi-hackintosh/ChimpiBypass",
       "status": "source"
-    },
-    "ChimpiKids": {
-      "name": "ChimpiKids",
-      "repo": "ChimpiKids",
-      "minimum": "1.0.0-demo.1",
-      "tag": "v1.0.0-demo.1",
-      "preview": true,
-      "edition": null,
-      "url": "https://github.com/Chimpi-hackintosh/ChimpiKids/releases/tag/v1.0.0-demo.1",
-      "status": "preview",
-      "artifact_digest": "sha256:e156571e4d32c24c28d1ea553526d195fe1fa936bc7e7d2922df2ab91d86b85b"
     },
     "ChimpiNature": {
       "name": "ChimpiNature",

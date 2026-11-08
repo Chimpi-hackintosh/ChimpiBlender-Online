@@ -43,6 +43,7 @@ test('policy refuses untrusted downloads, downgrades, invalid data and unknown p
   assert.deepEqual(s.checkedPolicy(candidate), s.POLICY);
   assert.deepEqual(s.checkedPolicy(null), s.POLICY);
   assert.equal(s.POLICY.apps['private-placeholder'], undefined);
+  assert.equal(s.POLICY.apps['ChimpiKids'], undefined);
   assert.equal(s.POLICY.apps['Earth-Blender'].status, 'source');
   assert.equal(s.POLICY.apps['ChimpiBypass'].status, 'source');
   assert.equal(s.POLICY.apps['ChimpiAI'].tag, 'v1.1.0');
