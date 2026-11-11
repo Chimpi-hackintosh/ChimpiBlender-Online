@@ -8,7 +8,7 @@ Antes dessa data o aviso informa que o suporte está prestes a terminar — depo
 
 O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já foi infectado
 
-| Aplicativo | Versão ou publicação pública conferida em 07/11/2026 | Mínima |
+| Aplicativo | Versão ou publicação pública conferida em 11/11/2026 | Mínima |
 | --- | --- | --- |
 | ChimpiBlender Online | Site sem versão de Release | Ainda sem mínimo de versão publicado |
 | ChimpiAI | v1.1.0 — estável | 1.1.0 |
@@ -41,7 +41,7 @@ Este PR entrega código e verificações — não equivale a um novo Release, at
 
 As prévias continuam identificadas como prévias — os números da tabela vêm de lançamentos existentes e não foram inventados para esta alteração
 
-O catálogo público inclui 18 entradas públicas verificadas em 08/11/2026 e não inclui repositórios privados
+O catálogo público inclui 18 entradas públicas verificadas em 11/11/2026 e não inclui repositórios privados
 
 ## Validação local desta alteração
 
@@ -67,7 +67,7 @@ Earth-Blender e ChimpiBypass foram incluídos como projetos sem Release para dow
 O workflow do ChimpiBypass gerou um artefato temporário com sucesso, mas isso não equivale a uma Release publicada nem comprova instalação ou funcionamento no computador do usuário
 
 
-## Releases públicas conferidas em 07/11/2026
+## Releases públicas conferidas em 11/11/2026
 
 A Release estável `v1.1.0` do ChimpiAI foi conferida com o instalador Windows publicado e seu digest SHA-256 informado pelo GitHub — a disponibilidade no catálogo WinGet continua dependendo da aprovação externa descrita pelo projeto
 
