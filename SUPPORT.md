@@ -8,15 +8,26 @@ Antes dessa data o aviso informa que o suporte está prestes a terminar — depo
 
 O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já foi infectado
 
-| Aplicativo | Versão ou publicação pública conferida em 11/11/2026 | Mínima |
-| --- | --- | --- |
-| ChimpiBlender Online | Site sem versão de Release | Ainda sem mínimo de versão publicado |
-| ChimpiAI | v1.1.0 — estável | 1.1.0 |
-| ChimpiNature | v1.0.0 — prévia | 1.0.0 |
-| Earth-Blender | Sem Release publicada | Ainda sem mínimo de versão publicado |
-| ChimpiBypass | Sem Release publicada, apesar do artefato temporário do workflow | Ainda sem mínimo de versão publicado |
-| Chimpi Find My Kids | v1.3.1-preview.1 | 1.3.1-preview.1 |
-| Chimpi Parents Find My Kids | v1.3.1-preview.1 | 1.3.1-preview.1 |
+| Projeto | Publicação conferida em 11/11/2026 | Classificação | Versão mínima sustentada |
+| --- | --- | --- | --- |
+| OpenCore Helper | [v3.0.2](https://github.com/Chimpi-hackintosh/OpenCore-Helper/releases/tag/v3.0.2) | Estável | 3.0.2 |
+| SnoopyOS Lite | [v0.1-lite.3](https://github.com/Chimpi-hackintosh/SnoopyOS-Image/releases/tag/v0.1-lite.3) | Prévia · edição Lite | 0.1.3 |
+| SnoopyOS Games | [v0.2-games.1](https://github.com/Chimpi-hackintosh/SnoopyOS-Image/releases/tag/v0.2-games.1) | Prévia · edição Games | 0.2.1 |
+| ChimpiAI | [v1.1.0](https://github.com/Chimpi-hackintosh/ChimpiAI/releases/tag/v1.1.0) | Estável | 1.1.0 |
+| WinSIMU | [v0.1.0-alpha](https://github.com/Chimpi-hackintosh/WinSIMU/releases/tag/v0.1.0-alpha) | Prévia · alpha | 0.1.0-alpha |
+| ChimpiCode | [v1.1.0-preview.3](https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.3) | Prévia | 1.1.0-preview.3 |
+| ChimpiBridge | [v0.1.1](https://github.com/Chimpi-hackintosh/ChimpiBridge/releases/tag/v0.1.1) | Prévia | 0.1.1 |
+| ChimpiShare | [v0.1.0](https://github.com/Chimpi-hackintosh/ChimpiShare/releases/tag/v0.1.0) | Prévia | 0.1.0 |
+| ChimpiConstruções | Sem Release para download | Código-fonte, sem binário | Sem mínimo publicado |
+| ChimpiBlender Online | Site, sem Release de aplicativo | Site publicado separadamente | Revisão web 20261102, não é versão de app |
+| ChimpiNotch | [v1.0.4](https://github.com/Chimpi-hackintosh/ChimpiNotch/releases/tag/v1.0.4) | Estável | 1.0.4 |
+| Chimpi3D | [v0.3.1-build-11](https://github.com/Chimpi-hackintosh/Chimpi3D-Installer/releases/tag/v0.3.1-build-11) | Estável | 0.3.1 |
+| ChimpiNFC | [v0.1.0-build-2](https://github.com/Chimpi-hackintosh/ChimpiNFC/releases/tag/v0.1.0-build-2) | Prévia | 0.1.0 |
+| Chimpi Find My Kids | [v1.3.1-preview.1](https://github.com/Chimpi-hackintosh/Chimpi-Find-My-Kids/releases/tag/v1.3.1-preview.1) | Prévia | 1.3.1-preview.1 |
+| Chimpi Parents Find My Kids | [v1.3.1-preview.1](https://github.com/Chimpi-hackintosh/Chimpi-Parents-Find-My-Kids/releases/tag/v1.3.1-preview.1) | Prévia | 1.3.1-preview.1 |
+| Earth-Blender | Sem Release para download | Código-fonte, sem binário | Sem mínimo publicado |
+| ChimpiBypass | Sem Release para download | Código-fonte, sem binário | Sem mínimo publicado |
+| ChimpiNature | [v1.0.0](https://github.com/Chimpi-hackintosh/ChimpiNature/releases/tag/v1.0.0) | Prévia | 1.0.0 |
 
 ## Comportamento
 
@@ -41,7 +52,7 @@ Este PR entrega código e verificações — não equivale a um novo Release, at
 
 As prévias continuam identificadas como prévias — os números da tabela vêm de lançamentos existentes e não foram inventados para esta alteração
 
-O catálogo público inclui 18 entradas públicas verificadas em 11/11/2026 e não inclui repositórios privados
+O catálogo público contém 18 entradas correspondentes a 17 repositórios públicos, porque SnoopyOS Lite e Games são edições separadas; não inclui o repositório privado
 
 ## Validação local desta alteração
 
@@ -68,6 +79,8 @@ O workflow do ChimpiBypass gerou um artefato temporário com sucesso, mas isso n
 
 
 ## Releases públicas conferidas em 11/11/2026
+
+Os mínimos de WinSIMU e ChimpiCode preservam os identificadores `alpha` e `preview.3` das únicas Releases publicadas dessas linhas — não há uma Release estável `0.1.0` ou `1.1.0` para esses projetos
 
 A Release estável `v1.1.0` do ChimpiAI foi conferida com o instalador Windows publicado e seu digest SHA-256 informado pelo GitHub — a disponibilidade no catálogo WinGet continua dependendo da aprovação externa descrita pelo projeto
 
