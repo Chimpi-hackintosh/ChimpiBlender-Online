@@ -53,7 +53,7 @@
     "WinSIMU": {
       "name": "WinSIMU",
       "repo": "WinSIMU",
-      "minimum": "0.1.0",
+      "minimum": "0.1.0-alpha",
       "tag": "v0.1.0-alpha",
       "preview": true,
       "edition": null,
@@ -63,7 +63,7 @@
     "ChimpiCode": {
       "name": "ChimpiCode",
       "repo": "ChimpiCode",
-      "minimum": "1.1.0",
+      "minimum": "1.1.0-preview.3",
       "tag": "v1.1.0-preview.3",
       "preview": true,
       "edition": null,
