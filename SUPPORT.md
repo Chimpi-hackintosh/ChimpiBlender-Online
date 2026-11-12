@@ -29,6 +29,8 @@ O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já
 | ChimpiBypass | Sem Release para download | Código-fonte, sem binário | Sem mínimo publicado |
 | ChimpiNature | [v1.0.0](https://github.com/Chimpi-hackintosh/ChimpiNature/releases/tag/v1.0.0) | Prévia | 1.0.0 |
 
+Observação: o PR de ChimpiConstruções menciona uma PWA externa, mas o PR ainda está aberto e a disponibilidade do endereço não foi confirmada nesta revisão — por isso o catálogo mantém o projeto como código-fonte sem Release para download, sem classificá-lo como site publicado
+
 ## Comportamento
 
 O campo opcional `windows_setup` registra o instalador do OpenCore Helper disponível no GitHub Releases. Ele vincula a tag ao SHA-256 do arquivo publicado e ao piso do fluxo assistido, Windows 11 x64 nativo (build 22000). Esse piso vale para a atualização assistida e não é uma declaração de compatibilidade de todos os pacotes
