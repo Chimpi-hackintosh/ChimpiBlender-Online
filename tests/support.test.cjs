@@ -17,6 +17,10 @@ test('only a known older installed version gets a notice', () => {
   assert.equal(s.notice('ChimpiBypass', '1.0.0'), null);
   assert.equal(s.notice('private', '1.0.0'), null);
   assert.ok(s.notice('OpenCore-Helper', '3.0.0'));
+  assert.equal(s.notice('WinSIMU', '0.1.0-alpha'), null);
+  assert.ok(s.notice('WinSIMU', '0.0.9'));
+  assert.equal(s.notice('ChimpiCode', '1.1.0-preview.3'), null);
+  assert.ok(s.notice('ChimpiCode', '1.1.0-preview.2'));
   assert.equal(s.compare(s.version('1.10.0'), s.version('1.9.0')), 1);
   assert.equal(s.compare(s.version('1.3.1-preview.0'), s.version('1.3.1-preview.1')), -1);
   assert.equal(s.compare(s.version('1.3.1'), s.version('1.3.1-preview.1')), 1);
