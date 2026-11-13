@@ -95,10 +95,11 @@
       "repo": "ChimpiConstrucoes",
       "minimum": null,
       "tag": null,
-      "preview": true,
+      "preview": false,
       "edition": null,
       "url": "https://github.com/Chimpi-hackintosh/ChimpiConstrucoes",
-      "status": "source"
+      "status": "website",
+      "deployment": "unverified"
     },
     "ChimpiBlender-Online": {
       "name": "ChimpiBlender Online",
@@ -107,9 +108,10 @@
       "tag": null,
       "preview": false,
       "edition": null,
-      "url": "https://chimpi-hackintosh.github.io/ChimpiBlender-Online/",
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiBlender-Online",
       "status": "website",
-      "web_revision": 20261102
+      "web_revision": 20261102,
+      "deployment": "unverified"
     },
     "ChimpiNotch": {
       "name": "ChimpiNotch",
