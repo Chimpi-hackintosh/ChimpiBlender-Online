@@ -18,8 +18,8 @@ O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já
 | ChimpiCode | [v1.1.0-preview.3](https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.3) | Prévia | 1.1.0-preview.3 |
 | ChimpiBridge | [v0.1.1](https://github.com/Chimpi-hackintosh/ChimpiBridge/releases/tag/v0.1.1) | Prévia | 0.1.1 |
 | ChimpiShare | [v0.1.0](https://github.com/Chimpi-hackintosh/ChimpiShare/releases/tag/v0.1.0) | Prévia | 0.1.0 |
-| ChimpiConstruções | Sem Release para download | Código-fonte, sem binário | Sem mínimo publicado |
-| ChimpiBlender Online | Site, sem Release de aplicativo | Site; implantação desta tabela ainda não confirmada | Revisão web 20261102, não é versão de app |
+| ChimpiConstruções | Projeto web/PWA | Site citado no README; publicação não verificada | Sem mínimo publicado |
+| ChimpiBlender Online | Projeto de site | Publicação não verificada; sem Release de aplicativo | Revisão web 20261102, não é versão de app |
 | ChimpiNotch | [v1.0.4](https://github.com/Chimpi-hackintosh/ChimpiNotch/releases/tag/v1.0.4) | Estável | 1.0.4 |
 | Chimpi3D | [v0.3.1-build-11](https://github.com/Chimpi-hackintosh/Chimpi3D-Installer/releases/tag/v0.3.1-build-11) | Estável | 0.3.1 |
 | ChimpiNFC | [v0.1.0-build-2](https://github.com/Chimpi-hackintosh/ChimpiNFC/releases/tag/v0.1.0-build-2) | Prévia | 0.1.0 |
@@ -29,7 +29,7 @@ O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já
 | ChimpiBypass | Sem Release para download | Código-fonte, sem binário | Sem mínimo publicado |
 | ChimpiNature | [v1.0.0](https://github.com/Chimpi-hackintosh/ChimpiNature/releases/tag/v1.0.0) | Prévia | 1.0.0 |
 
-Observação: o PR de ChimpiConstruções menciona uma PWA externa, mas o PR ainda está aberto e a disponibilidade do endereço não foi confirmada nesta revisão — por isso o catálogo mantém o projeto como código-fonte sem Release para download, sem classificá-lo como site publicado
+Observação: ChimpiConstruções contém uma PWA no código e um endereço externo no README, mas a disponibilidade desse endereço não foi confirmada — a entrada é classificada como projeto de site, com implantação não verificada e sem versão mínima publicada. ChimpiBlender Online também é um projeto de site, mas seu GitHub Pages e a tabela de suporte ainda dependem da configuração e publicação correspondentes
 
 ## Comportamento
 
