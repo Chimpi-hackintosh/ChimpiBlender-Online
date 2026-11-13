@@ -1,0 +1,75 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const path = require('node:path');
+const context = {module: {exports: {}}, URL, AbortController, setTimeout, clearTimeout, fetch: (...args) => global.fetch(...args)};
+vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../support-notice.js'), 'utf8'), context);
+const s = context.module.exports;
+test('only a known older installed version gets a notice', () => {
+  for (const v of ['3.0.2', '4.0.0', '3.0.2-build-3', 'bad', null]) assert.equal(s.notice('OpenCore-Helper', v), null);
+  assert.equal(s.notice('ChimpiConstrucoes', '1.0.0'), null);
+  assert.equal(s.notice('ChimpiAI', '1.1.0'), null);
+  assert.ok(s.notice('ChimpiAI', '1.0.0'));
+  assert.equal(s.notice('ChimpiNature', '1.0.0'), null);
+  assert.ok(s.notice('ChimpiNature', '0.9.0'));
+  assert.equal(s.notice('Earth-Blender', '1.0.0'), null);
+  assert.equal(s.notice('ChimpiBypass', '1.0.0'), null);
+  assert.equal(s.notice('private', '1.0.0'), null);
+  assert.ok(s.notice('OpenCore-Helper', '3.0.0'));
+  assert.equal(s.notice('WinSIMU', '0.1.0-alpha'), null);
+  assert.ok(s.notice('WinSIMU', '0.0.9'));
+  assert.equal(s.notice('ChimpiCode', '1.1.0-preview.3'), null);
+  assert.ok(s.notice('ChimpiCode', '1.1.0-preview.2'));
+  assert.equal(s.compare(s.version('1.10.0'), s.version('1.9.0')), 1);
+  assert.equal(s.compare(s.version('1.3.1-preview.0'), s.version('1.3.1-preview.1')), -1);
+  assert.equal(s.compare(s.version('1.3.1'), s.version('1.3.1-preview.1')), 1);
+});
+test('date switches exactly at 2026-11-04 UTC, with translated bodies', () => {
+  for (const lang of Object.keys(s.MESSAGES)) {
+    const before = s.notice('OpenCore-Helper', '2.0.0', s.POLICY, new Date('2026-11-03T23:59:59Z'), lang);
+    const after = s.notice('OpenCore-Helper', '2.0.0', s.POLICY, new Date('2026-11-04T00:00:00Z'), lang);
+    assert.equal(before.phase, 'before'); assert.equal(after.phase, 'after');
+    assert.equal(before.title, s.MESSAGES[lang].before); assert.ok(!before.body.includes('{'));
+  }
+  assert.equal(s.language('pt-BR'), 'pt'); assert.equal(s.language('unknown'), 'en');
+});
+test('policy refuses untrusted downloads, downgrades, invalid data and unknown private apps', () => {
+  for (const url of ['https://evil.test/', 'http://github.com/Chimpi-hackintosh/OpenCore-Helper', 'https://github.com/other/OpenCore-Helper']) {
+    const candidate = structuredClone(s.POLICY);
+    Object.assign(candidate.apps['OpenCore-Helper'], {minimum: '99.0.0', url});
+    assert.deepEqual(s.checkedPolicy(candidate), s.POLICY);
+  }
+  const candidate = structuredClone(s.POLICY); candidate.apps['OpenCore-Helper'].minimum = '1.0.0';
+  assert.deepEqual(s.checkedPolicy(candidate), s.POLICY);
+  assert.deepEqual(s.checkedPolicy(null), s.POLICY);
+  assert.equal(s.POLICY.apps['private-placeholder'], undefined);
+  assert.equal(s.POLICY.apps['ChimpiKids'], undefined);
+  assert.equal(s.POLICY.apps['Earth-Blender'].status, 'source');
+  assert.equal(s.POLICY.apps['ChimpiBypass'].status, 'source');
+  assert.equal(s.POLICY.apps['ChimpiConstrucoes'].status, 'website');
+  assert.equal(s.POLICY.apps['ChimpiConstrucoes'].deployment, 'unverified');
+  assert.equal(s.POLICY.apps['ChimpiBlender-Online'].deployment, 'unverified');
+  assert.equal(s.POLICY.apps['ChimpiBlender-Online'].url, 'https://github.com/Chimpi-hackintosh/ChimpiBlender-Online');
+  assert.equal(s.POLICY.apps['ChimpiAI'].tag, 'v1.1.0');
+  assert.equal(s.POLICY.apps['ChimpiAI'].status, 'published');
+  assert.equal(s.POLICY.apps['ChimpiNature'].tag, 'v1.0.0');
+  assert.equal(s.POLICY.apps['ChimpiNature'].status, 'preview');
+  assert.equal(s.notice('Chimpi-Find-My-Kids', '1.3.1-preview.1'), null);
+  assert.ok(s.notice('Chimpi-Find-My-Kids', '1.3.1-preview.0'));
+  assert.ok(s.notice('Chimpi-Find-My-Kids', '1.2.0-preview.1'));
+  assert.equal(s.POLICY.apps['Chimpi-Find-My-Kids'].tag, 'v1.3.1-preview.1');
+});
+test('unavailable network falls back without blocking app startup', async () => {
+  const fetch = global.fetch; global.fetch = async () => { throw new Error('offline'); };
+  try { assert.deepEqual(await s.fetchPolicy(), s.POLICY); } finally { global.fetch = fetch; }
+});
+test('web deployment revisions are separate from app release versions', () => {
+  assert.equal(s.notice('ChimpiBlender-Online', '20261102'), null);
+  assert.ok(s.notice('ChimpiBlender-Online', '20261031'));
+  const candidate = structuredClone(s.POLICY);
+  candidate.apps['ChimpiBlender-Online'].web_revision = 20261103;
+  assert.ok(s.notice('ChimpiBlender-Online', '20261102', s.checkedPolicy(candidate)));
+  candidate.apps['ChimpiBlender-Online'].url = 'https://evil.test/';
+  assert.equal(s.notice('ChimpiBlender-Online', '20261102', s.checkedPolicy(candidate)), null);
+});
