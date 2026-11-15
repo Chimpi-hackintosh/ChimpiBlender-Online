@@ -56,8 +56,8 @@ test('policy refuses untrusted downloads, downgrades, invalid data and unknown p
   assert.equal(s.POLICY.apps['ChimpiBlender-Online'].url, 'https://github.com/Chimpi-hackintosh/ChimpiBlender-Online');
   assert.equal(s.POLICY.apps['ChimpiAI'].tag, 'v1.1.0');
   assert.equal(s.POLICY.apps['ChimpiAI'].status, 'published');
-  assert.equal(s.POLICY.apps['ChimpiCode'].minimum, '1.1.0-preview.15');
-  assert.equal(s.POLICY.apps['ChimpiCode'].tag, 'v1.1.0-preview.15');
+  assert.equal(s.POLICY.apps['ChimpiCode'].minimum, '1.1.0-preview.18');
+  assert.equal(s.POLICY.apps['ChimpiCode'].tag, 'v1.1.0-preview.18');
   assert.equal(s.POLICY.apps['ChimpiNature'].tag, 'v1.0.0');
   assert.equal(s.POLICY.apps['ChimpiNature'].status, 'preview');
   assert.equal(s.notice('Chimpi-Find-My-Kids', '1.3.1-preview.1'), null);
