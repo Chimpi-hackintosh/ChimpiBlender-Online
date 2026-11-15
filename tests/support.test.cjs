@@ -20,7 +20,9 @@ test('only a known older installed version gets a notice', () => {
   assert.equal(s.notice('WinSIMU', '0.1.0-alpha'), null);
   assert.ok(s.notice('WinSIMU', '0.0.9'));
   assert.ok(s.notice('ChimpiCode', '1.1.0-preview.12'));
-  assert.equal(s.notice('ChimpiCode', '1.1.0-preview.15'), null);
+  assert.ok(s.notice('ChimpiCode', '1.1.0-preview.15'));
+  assert.equal(s.notice('ChimpiCode', '1.1.0-preview.18'), null);
+  assert.equal(s.notice('ChimpiCode', '1.1.0-preview.19'), null);
   assert.ok(s.notice('ChimpiCode', '1.1.0-preview.10'));
   assert.equal(s.compare(s.version('1.10.0'), s.version('1.9.0')), 1);
   assert.equal(s.compare(s.version('1.3.1-preview.0'), s.version('1.3.1-preview.1')), -1);
