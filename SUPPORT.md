@@ -15,7 +15,7 @@ O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já
 | SnoopyOS Games | [v0.2-games.1](https://github.com/Chimpi-hackintosh/SnoopyOS-Image/releases/tag/v0.2-games.1) | Prévia · edição Games | 0.2.1 |
 | ChimpiAI | [v1.1.0](https://github.com/Chimpi-hackintosh/ChimpiAI/releases/tag/v1.1.0) | Estável | 1.1.0 |
 | WinSIMU | [v0.1.0-alpha](https://github.com/Chimpi-hackintosh/WinSIMU/releases/tag/v0.1.0-alpha) | Prévia · alpha | 0.1.0-alpha |
-| ChimpiCode | [v1.1.0-preview.18](https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.18) | Prévia | 1.1.0-preview.18 |
+| ChimpiCode | [v1.1.0-preview.21](https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.21) | Prévia | 1.1.0-preview.21 |
 | ChimpiBridge | [v0.1.1](https://github.com/Chimpi-hackintosh/ChimpiBridge/releases/tag/v0.1.1) | Prévia | 0.1.1 |
 | ChimpiShare | [v0.1.0](https://github.com/Chimpi-hackintosh/ChimpiShare/releases/tag/v0.1.0) | Prévia | 0.1.0 |
 | ChimpiConstruções | Projeto web/PWA | Site citado no README; publicação não verificada | Sem mínimo publicado |
@@ -99,3 +99,8 @@ A Release `v1.1.0-preview.15` do ChimpiCode foi conferida em 15/11/2026; o diges
 ## Atualização da prévia ChimpiCode em 15/11/2026
 
 A Release pública `v1.1.0-preview.18` foi publicada em 15/11/2026 às 14:05:41 UTC e permanece classificada como prévia. O digest SHA-256 do instalador `ChimpiCode-1.1.0-x64-Setup.exe` informado pelos metadados oficiais é `sha256:e518703784c7f38143332c5a12e6ed96f6a0bf84ca0831ba40ca9f556bee020f`. A versão estável do ChimpiCode continua sendo `v1.0.0`; esta prévia não deve ser descrita como estável.
+
+
+## Atualização da prévia ChimpiCode em 15/11/2026
+
+A Release pública `v1.1.0-preview.21` foi publicada em 15/11/2026 às 14:22:46 UTC e permanece classificada como prévia. O digest SHA-256 do instalador `ChimpiCode-1.1.0-x64-Setup.exe` informado pelos metadados oficiais é `sha256:66784558333392705e5a8c4a3fb349ede6f46725083b3134e72ab037aad04bfa`. A versão estável continua sendo `v1.0.0`.
