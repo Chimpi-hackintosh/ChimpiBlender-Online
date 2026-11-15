@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "verified_at": "2026-11-11",
+  "verified_at": "2026-11-15",
   "ends_at": "2026-11-04T00:00:00Z",
   "table": "https://chimpi-hackintosh.github.io/ChimpiBlender-Online/support.html",
   "apps": {
@@ -63,12 +63,13 @@
     "ChimpiCode": {
       "name": "ChimpiCode",
       "repo": "ChimpiCode",
-      "minimum": "1.1.0-preview.3",
-      "tag": "v1.1.0-preview.3",
+      "minimum": "1.1.0-preview.11",
+      "tag": "v1.1.0-preview.11",
       "preview": true,
       "edition": null,
-      "url": "https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.3",
-      "status": "preview"
+      "url": "https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.11",
+      "status": "preview",
+      "artifact_digest": "sha256:42103cfb2bf8954ecc424f5996a9b667342c5f6c61291dc7f038415fab3295f3"
     },
     "ChimpiBridge": {
       "name": "ChimpiBridge",

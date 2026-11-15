@@ -19,8 +19,8 @@ test('only a known older installed version gets a notice', () => {
   assert.ok(s.notice('OpenCore-Helper', '3.0.0'));
   assert.equal(s.notice('WinSIMU', '0.1.0-alpha'), null);
   assert.ok(s.notice('WinSIMU', '0.0.9'));
-  assert.equal(s.notice('ChimpiCode', '1.1.0-preview.3'), null);
-  assert.ok(s.notice('ChimpiCode', '1.1.0-preview.2'));
+  assert.equal(s.notice('ChimpiCode', '1.1.0-preview.11'), null);
+  assert.ok(s.notice('ChimpiCode', '1.1.0-preview.10'));
   assert.equal(s.compare(s.version('1.10.0'), s.version('1.9.0')), 1);
   assert.equal(s.compare(s.version('1.3.1-preview.0'), s.version('1.3.1-preview.1')), -1);
   assert.equal(s.compare(s.version('1.3.1'), s.version('1.3.1-preview.1')), 1);
@@ -53,6 +53,8 @@ test('policy refuses untrusted downloads, downgrades, invalid data and unknown p
   assert.equal(s.POLICY.apps['ChimpiBlender-Online'].url, 'https://github.com/Chimpi-hackintosh/ChimpiBlender-Online');
   assert.equal(s.POLICY.apps['ChimpiAI'].tag, 'v1.1.0');
   assert.equal(s.POLICY.apps['ChimpiAI'].status, 'published');
+  assert.equal(s.POLICY.apps['ChimpiCode'].minimum, '1.1.0-preview.11');
+  assert.equal(s.POLICY.apps['ChimpiCode'].tag, 'v1.1.0-preview.11');
   assert.equal(s.POLICY.apps['ChimpiNature'].tag, 'v1.0.0');
   assert.equal(s.POLICY.apps['ChimpiNature'].status, 'preview');
   assert.equal(s.notice('Chimpi-Find-My-Kids', '1.3.1-preview.1'), null);
