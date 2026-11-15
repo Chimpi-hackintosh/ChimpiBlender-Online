@@ -15,7 +15,7 @@ O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já
 | SnoopyOS Games | [v0.2-games.1](https://github.com/Chimpi-hackintosh/SnoopyOS-Image/releases/tag/v0.2-games.1) | Prévia · edição Games | 0.2.1 |
 | ChimpiAI | [v1.1.0](https://github.com/Chimpi-hackintosh/ChimpiAI/releases/tag/v1.1.0) | Estável | 1.1.0 |
 | WinSIMU | [v0.1.0-alpha](https://github.com/Chimpi-hackintosh/WinSIMU/releases/tag/v0.1.0-alpha) | Prévia · alpha | 0.1.0-alpha |
-| ChimpiCode | [v1.1.0-preview.12](https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.12) | Prévia | 1.1.0-preview.12 |
+| ChimpiCode | [v1.1.0-preview.15](https://github.com/Chimpi-hackintosh/ChimpiCode/releases/tag/v1.1.0-preview.15) | Prévia | 1.1.0-preview.15 |
 | ChimpiBridge | [v0.1.1](https://github.com/Chimpi-hackintosh/ChimpiBridge/releases/tag/v0.1.1) | Prévia | 0.1.1 |
 | ChimpiShare | [v0.1.0](https://github.com/Chimpi-hackintosh/ChimpiShare/releases/tag/v0.1.0) | Prévia | 0.1.0 |
 | ChimpiConstruções | Projeto web/PWA | Site citado no README; publicação não verificada | Sem mínimo publicado |
@@ -82,7 +82,7 @@ O workflow do ChimpiBypass gerou um artefato temporário com sucesso, mas isso n
 
 ## Releases públicas conferidas em 15/11/2026
 
-WinSIMU continua sustentado pela prévia `v0.1.0-alpha`. O mínimo do ChimpiCode foi atualizado para `v1.1.0-preview.12`, publicada em 15/11/2026 às 13:27 UTC; a Release inclui instalador EXE, MSI e pacotes macOS, permanece marcada como prévia e não representa uma versão estável `1.1.0`.
+WinSIMU continua sustentado pela prévia `v0.1.0-alpha`. O mínimo do ChimpiCode foi atualizado para `v1.1.0-preview.15`, publicada em 15/11/2026 às 13:56:56 UTC; a Release inclui instalador EXE, MSI e pacotes macOS, permanece marcada como prévia e não representa uma versão estável `1.1.0`.
 
 A Release estável `v1.1.0` do ChimpiAI foi conferida com o instalador Windows publicado e seu digest SHA-256 informado pelo GitHub — a disponibilidade no catálogo WinGet continua dependendo da aprovação externa descrita pelo projeto
 
@@ -93,4 +93,4 @@ A Release `v1.0.0` do ChimpiNature foi conferida como prévia, com JAR do mod Fa
 O ChimpiKids deixou de aparecer na paginação autorizada e a consulta direta ao repositório passou a retornar `404` — a entrada foi removida do catálogo porque a Release não pôde mais ser verificada, sem afirmar se o repositório foi excluído ou se o acesso mudou
 
 
-A Release `v1.1.0-preview.12` do ChimpiCode foi conferida em 15/11/2026; o digest SHA-256 do instalador `ChimpiCode-1.1.0-x64-Setup.exe` é `sha256:b4232899ef1eaeebb119c1c19889e8611cb8629d7fdb136b268c35b6aa63ae15`, conforme os metadados oficiais da Release
+A Release `v1.1.0-preview.15` do ChimpiCode foi conferida em 15/11/2026; o digest SHA-256 do instalador `ChimpiCode-1.1.0-x64-Setup.exe` é `sha256:6dfa2dae247b8c6a5212475ad4cda852f903faebf9e4eef1e4ce10b8d51e16c7`, conforme os metadados oficiais da Release
