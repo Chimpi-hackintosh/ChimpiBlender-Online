@@ -8,7 +8,7 @@ Antes dessa data o aviso informa que o suporte está prestes a terminar — depo
 
 O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já foi infectado
 
-| Projeto | Publicação conferida em 17/11/2026 | Classificação | Versão mínima sustentada |
+| Projeto | Publicação conferida em 18/11/2026 | Classificação | Versão mínima sustentada |
 | --- | --- | --- | --- |
 | OpenCore Helper | [v3.0.2](https://github.com/Chimpi-hackintosh/OpenCore-Helper/releases/tag/v3.0.2) | Estável | 3.0.2 |
 | SnoopyOS Lite | [v0.1-lite.3](https://github.com/Chimpi-hackintosh/SnoopyOS-Image/releases/tag/v0.1-lite.3) | Prévia · edição Lite | 0.1.3 |
@@ -29,7 +29,7 @@ O texto explica o risco de falhas sem afirmar que o usuário ou o aplicativo já
 | ChimpiBypass | Sem Release para download | Código-fonte, sem binário | Sem mínimo publicado |
 | ChimpiNature | [v1.0.0](https://github.com/Chimpi-hackintosh/ChimpiNature/releases/tag/v1.0.0) | Prévia | 1.0.0 |
 
-Revisão em 17/11/2026: os metadados das Releases públicas foram consultados novamente. Nenhuma Release posterior aos tags listados foi encontrada; estáveis e prévias permanecem classificadas conforme o campo oficial de pré-lançamento. O catálogo mantém as 17 fontes públicas, com Lite e Games como edições separadas, e não inclui o repositório privado.
+Revisão em 18/11/2026: os metadados das Releases públicas foram consultados novamente. Nenhuma Release posterior aos tags listados foi encontrada; estáveis e prévias permanecem classificadas conforme o campo oficial de pré-lançamento. O catálogo mantém as 17 fontes públicas, com Lite e Games como edições separadas, e não inclui o repositório privado.
 
 Observação: ChimpiConstruções contém uma PWA no código e um endereço externo no README, mas a disponibilidade desse endereço não foi confirmada — a entrada é classificada como projeto de site, com implantação não verificada e sem versão mínima publicada. ChimpiBlender Online também é um projeto de site, mas seu GitHub Pages e a tabela de suporte ainda dependem da configuração e publicação correspondentes
 
