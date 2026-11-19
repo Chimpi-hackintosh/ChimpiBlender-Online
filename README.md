@@ -2,17 +2,15 @@
 
 **Seu mini estúdio 3D no navegador, em português e sem instalação** 💜
 
-O ChimpiBlender Online é um editor 3D leve, desenvolvido em **HTML, CSS e JavaScript puro**. Ele funciona sem bibliotecas externas e também pode ser aberto offline para modelos 3d
-
-
+O ChimpiBlender Online é um editor 3D leve, desenvolvido em **HTML, CSS e JavaScript puro**. Ele funciona sem bibliotecas externas e também pode ser aberto offline para modelos 3D
 
 ## 🌐 Acessar o editor
 
-Depois de ativar o GitHub Pages, o site ficará disponível em:
+Quando o GitHub Pages estiver habilitado neste repositório, o site ficará disponível em:
 
 `https://chimpi-hackintosh.github.io/ChimpiBlender-Online/`
 
-**Antes da publicação:** abra `index.html` diretamente no navegador do computador, ou use um servidor local para testar.
+**Antes da publicação:** abra `index.html` diretamente no navegador do computador ou use um servidor local para testar
 
 ## ✨ Funcionalidades
 
@@ -46,32 +44,49 @@ Depois de ativar o GitHub Pages, o site ficará disponível em:
 | Arrastar fora do objeto | Girar câmera |
 | `Shift` + arrastar o fundo | Mover câmera |
 
-## 🚀 Publicar com GitHub Pages (sem terminal)
+## 🚀 Publicar este repositório com GitHub Pages
 
-1. Crie um repositório **público** chamado `ChimpiBlender-Online` em sua conta GitHub
-2. Dentro dele, clique em **Add file → Upload files**
-3. Envie os **arquivos extraídos da pasta**, especialmente `index.html` na raiz, sem uma pasta extra
-4. Clique em **Commit changes**
-5. Abra **Settings → Pages**
-6. Em **Build and deployment**, selecione **Deploy from a branch**
-7. Selecione `main`, pasta `/(root)` e clique em **Save**
-8. Aguarde o GitHub concluir a publicação e abra o endereço indicado no topo deste README
+Este repositório **já existe**. Não é necessário criar outro repositório nem enviar os arquivos novamente
 
-**Importante:** um site publicado pelo GitHub Pages pode ser visitado por outras pessoas. Se preferir manter o projeto só no seu computador, basta abrir `index.html` offline e não ativar o GitHub Pages.
+1. Abra **Settings → Pages** neste repositório
+2. Em **Build and deployment**, selecione **Deploy from a branch**
+3. Selecione a branch `main` e a pasta `/(root)`
+4. Clique em **Save**
+5. Aguarde o GitHub Pages indicar que a publicação foi concluída e use o endereço mostrado nessa tela
+
+A disponibilidade do endereço depende da configuração e da conclusão da publicação do GitHub Pages; a existência deste código no repositório, por si só, não comprova que o site esteja publicado
+
+**Importante:** um site publicado pelo GitHub Pages pode ser visitado por outras pessoas. Se preferir manter o projeto só no seu computador, abra `index.html` offline e não ative o GitHub Pages
+
+A página de suporte e seu catálogo também só ficarão disponíveis no site depois que as alterações correspondentes forem integradas e o GitHub Pages publicar os arquivos. Este pull request contém código e documentação, não é um novo Release nem comprova uma publicação do site
 
 ## 📁 Arquivos
 
-```
+```text
 ChimpiBlender-Online/
-├── index.html       # Editor 3D completo
-├── README.md        # Documentação
-├── LICENSE          # Licença Apache 2.0
-└── .gitignore       # Arquivos ignorados pelo Git
+├── .github/workflows/support-notice.yml
+├── index.html
+├── surpresa/index.html
+├── support.html
+├── support-notice.js
+├── support-policy.json
+├── SUPPORT.md
+├── tests/
+│   ├── support.test.cjs
+│   └── verify_support_browser.py
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
 Feito para o projeto **Chimpi-hackintosh** 💜
+
 ## 📜 Licença
 
 Este repositório utiliza a **Apache License 2.0**, conforme o arquivo [LICENSE](LICENSE) já presente no projeto
+
+## Aviso de suporte
+
+Aviso traduzido, data de 04/11/2026 às 00h UTC, versões e limites de distribuição em [SUPPORT.md](SUPPORT.md)
